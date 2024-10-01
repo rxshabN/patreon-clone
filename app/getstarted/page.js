@@ -75,7 +75,8 @@ const GetStarted = () => {
         <span className="text-red-500 font-bold text-md">
           Note that upon changing the username, previous transactions will not
           be displayed as all transactions are associated with one username
-          only.
+          only. Hence the option to change email and username is disabled by
+          default to avoid any unexpected loss of data.
         </span>
       </div>
 
