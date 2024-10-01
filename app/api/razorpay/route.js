@@ -32,7 +32,12 @@ export const POST = async (req) => {
       { done: true },
       { new: true }
     );
-    return NextResponse.redirect(`${process.env.NEXT_PUBLIC_URL}`);
+    return NextResponse.redirect(
+      `${process.env.NEXT_PUBLIC_URL}/paymentsuccess`,
+      {
+        status: 302, // Explicitly set the 302 redirect status code
+      }
+    );
   } else {
     return NextResponse.json({
       success: false,
