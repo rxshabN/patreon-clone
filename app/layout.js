@@ -37,6 +37,8 @@ export default function RootLayout({ children }) {
           </div>
           <Footer />
         </SessionWrapper>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
