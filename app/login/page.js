@@ -17,7 +17,7 @@ const Login = () => {
     }
   }, [session, router]);
 
-  if (status === "loading") {
+  if (status === "loading" || !router.isReady) {
     return <Loading />;
   } else {
     return (
