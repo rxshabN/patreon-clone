@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image"; // Import Image from next/image
 
 const MyProjects = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(true);
@@ -51,7 +52,7 @@ const MyProjects = () => {
             <p>
               This is a static webpage built using HTML and CSS. It was my first
               project and looks exactly like the Netflix landing page, but it
-              isn't functional.
+              isn&apos;t functional.
             </p>
           </div>
         </div>
@@ -64,14 +65,15 @@ const MyProjects = () => {
             Project 2: Spotify Clone
           </span>
           {isLargeScreen ? (
-            <div className="relative overflow-hidden rounded-lg border-4 border-[#4C212A] hover:shadow-lg hover:shadow-[#fffafa] transition-all duration-200 ease-linear">
-              <iframe
-                src="https://spotifyrn.freewebhostmost.com/"
-                title="Spotify Clone"
-                className="w-full h-[55vh]"
-                frameBorder="0"
-                allowFullScreen
-              />
+            <div className="relative overflow-hidden">
+              <a
+                href="https://spotifyrn.freewebhostmost.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:underline"
+              >
+                Visit the Spotify Clone
+              </a>
             </div>
           ) : (
             <a
@@ -176,10 +178,11 @@ const MyProjects = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
+          <Image
             src="/imageedit_3_6316064818.png"
             alt="GitHub Logo"
             width={150}
+            height={150} // Specify height for optimization
             className="mx-auto border border-collapse rounded-full hover:shadow-purple-800 hover:shadow-xl transition-all duration-200 ease-linear"
           />
         </a>

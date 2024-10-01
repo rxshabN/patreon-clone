@@ -21,8 +21,8 @@ const About = () => {
       </div>
 
       <p className="text-lg mb-4">
-        Hi, I'm <strong>Rishab Nagwani</strong>, a student at VIT Vellore from
-        Mumbai. This app is a <strong>Patreon Clone</strong> built using{" "}
+        Hi, I&apos;m <strong>Rishab Nagwani</strong>, a student at VIT Vellore
+        from Mumbai. This app is a <strong>Patreon Clone</strong> built using{" "}
         <strong>Next.js</strong> and <strong>Tailwind CSS</strong>.
       </p>
 
@@ -48,9 +48,9 @@ const About = () => {
         As a student, I noticed the growing need for platforms that help
         creators monetize their content. This app is my take on providing a
         user-friendly solution that makes it easier for creators to receive
-        support from their fans. As of now, I'm the only creator on this app as
-        it is simply a project and not a production website hence all payments
-        are received in my personal bacnk account.
+        support from their fans. As of now, I&apos;m the only creator on this
+        app as it is simply a project and not a production website; hence all
+        payments are received in my personal bank account.
       </p>
 
       <h2 className="text-2xl font-semibold mb-2">Get Involved</h2>
@@ -64,7 +64,7 @@ const About = () => {
         <Link href="/" className="text-blue-500 hover:underline">
           <button
             type="button"
-            class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+            className="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
           >
             Back to Homepage
           </button>
