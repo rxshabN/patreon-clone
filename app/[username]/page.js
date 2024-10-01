@@ -1,5 +1,4 @@
 import PaymentPage from "@/components/PaymentPage";
-import PaymentSuccess from "../paymentsuccess/page"; // Import the PaymentSuccess component
 import React from "react";
 import { notFound } from "next/navigation";
 import connectDb from "@/db/connectDb";
@@ -14,11 +13,6 @@ const Username = async ({ params }) => {
     }
   };
   await checkuser();
-
-  // Check if the redirect path is for PaymentSuccess
-  if (params.username === "paymentsuccess") {
-    return <PaymentSuccess />; // Render the PaymentSuccess component directly
-  }
 
   // If it's a valid username, render the PaymentPage
   return (
