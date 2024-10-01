@@ -3,7 +3,6 @@ import { validatePaymentVerification } from "razorpay/dist/utils/razorpay-utils"
 import Payment from "@/models/Payment";
 import connectDb from "@/db/connectDb";
 import User from "@/models/User";
-import PaymentSuccess from "@/app/paymentsuccess/page";
 
 export const POST = async (req) => {
   await connectDb();
