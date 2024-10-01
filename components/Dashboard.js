@@ -11,10 +11,9 @@ const Dashboard = () => {
   const { data: session, status } = useSession();
   const router = useRouter();
   const [form, setform] = useState({});
-
-  // Wrap getData in useCallback to memoize it
   const [loading, setLoading] = useState(true); // State for loading
 
+  // Wrap getData in useCallback to memoize it
   const getData = useCallback(async () => {
     try {
       if (session && session.user) {
@@ -50,22 +49,32 @@ const Dashboard = () => {
     e.preventDefault();
     const formData = new FormData(e.target);
     let ndata = Object.fromEntries(formData);
-    let response = await updateProfile(ndata, session.user.name);
-    if (response.ok) {
-      toast.success("Profile updated!", {
-        position: "top-center",
-        autoClose: 1800,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: false,
-        draggable: false,
-        progress: undefined,
-        theme: "colored",
-        transition: Flip,
-      });
-      setTimeout(() => {
+
+    // Show the success toast immediately
+    toast.success("Profile updated!", {
+      position: "top-center",
+      autoClose: 1800,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: false,
+      progress: undefined,
+      theme: "colored",
+      transition: Flip,
+    });
+
+    setLoading(true); // Start loading
+
+    try {
+      let response = await updateProfile(ndata, session.user.name);
+      if (response.ok) {
+        // Redirect to payment page immediately after loading
         router.push(`/${ndata.username || session.user.name}`);
-      }, 2750);
+      }
+    } catch (error) {
+      console.error("Error updating profile:", error);
+    } finally {
+      setLoading(false); // End loading
     }
   };
 
