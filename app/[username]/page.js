@@ -1,5 +1,5 @@
 import PaymentPage from "@/components/PaymentPage";
-import PaymentSuccess from "../paymentsuccess/page"; // Import the PaymentSuccess component
+import PaymentSuccess from "../PaymentSuccess/page"; // Import the PaymentSuccess component
 import React from "react";
 import { notFound } from "next/navigation";
 import connectDb from "@/db/connectDb";
