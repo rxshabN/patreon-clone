@@ -8,7 +8,7 @@ A Patreon-like platform built using **Next.js**, **Tailwind CSS**, and **MongoDB
 - Create, read, and manage user profiles
 - Payment integration with Razorpay for subscriptions
 - Responsive design with Tailwind CSS
-- MongoDB Atlas for data storage
+- MongoDB Atlas Cluster for data storage
 
 ## Technologies Used
 
