@@ -11,7 +11,7 @@ const PaymentSuccess = () => {
   } else {
     return (
       <div className="min-w-screen h-fit text-white text-4xl flex flex-col items-center relative top-52">
-        <div className="flex flex-row gap-5 items-center mb-5 ml-[9vw]">
+        <div className="flex flex-row gap-5 items-center mb-5 ml-[9vw] md:ml-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
