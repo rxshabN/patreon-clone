@@ -6,7 +6,6 @@ import { useSession } from "next-auth/react";
 import { Flip, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useSearchParams } from "next/navigation";
-import Image from "next/image";
 import Loading from "@/app/loading/page";
 
 const PaymentPage = ({ username }) => {
@@ -165,7 +164,7 @@ const PaymentPage = ({ username }) => {
                 : "absolute overflow-hidden border-2 rounded-full size-40"
             }
           >
-            <Image
+            <img
               src={
                 currentuser.profilepic === 0 || !currentuser.profilepic
                   ? "/Untitled_design-removebg-preview.png"
