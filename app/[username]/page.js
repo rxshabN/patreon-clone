@@ -16,7 +16,7 @@ const Username = async ({ params }) => {
   await checkuser();
 
   // Check if the redirect path is for PaymentSuccess
-  if (params.username === "PaymentSuccess") {
+  if (params.username === "paymentsuccess") {
     return <PaymentSuccess />; // Render the PaymentSuccess component directly
   }
 
