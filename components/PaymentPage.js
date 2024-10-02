@@ -178,7 +178,7 @@ const PaymentPage = ({ username }) => {
                 !currentuser.profilepic ||
                 currentuser.username === "nagwanirishab"
                   ? "/Untitled_design-removebg-preview.png"
-                  : "/user-circle-stroke-rounded.svg"
+                  : "/user-stroke-rounded.svg"
               }
               alt="invalid url"
               width={330}
