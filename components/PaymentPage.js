@@ -5,11 +5,19 @@ import { fetchpayments, initiate, fetchuser } from "@/actions/useractions";
 import { useSession } from "next-auth/react";
 import { Flip, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import Loading from "@/app/loading/page";
 
 const PaymentPage = ({ username }) => {
   const { data: session, status } = useSession();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (status === "unauthenticated") {
+      router.push("/login"); // Redirect to the homepage
+    }
+  }, [status, router]);
+
   const handleChange = (e) => {
     setpaymentform({ ...paymentform, [e.target.name]: e.target.value });
   };

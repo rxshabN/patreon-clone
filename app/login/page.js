@@ -9,6 +9,12 @@ const Login = () => {
   const { data: session, status } = useSession();
   const router = useRouter();
 
+  useEffect(() => {
+    if (status === "unauthenticated") {
+      router.push("/login"); // Redirect to the homepage
+    }
+  }, [status, router]);
+
   // If the session exists, redirect to the user's page
   useEffect(() => {
     document.title = "Login - Patreon Clone";

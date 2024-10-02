@@ -13,6 +13,12 @@ const Dashboard = () => {
   const [form, setform] = useState({});
   const [loading, setLoading] = useState(true); // State for loading
 
+  useEffect(() => {
+    if (status === "unauthenticated") {
+      router.push("/login"); // Redirect to the homepage
+    }
+  }, [status, router]);
+
   // Wrap getData in useCallback to memoize it
   const getData = useCallback(async () => {
     try {
