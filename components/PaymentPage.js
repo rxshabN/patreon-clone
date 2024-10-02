@@ -150,7 +150,7 @@ const PaymentPage = ({ username }) => {
           transition={Flip}
         />
         <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
-        <div
+        {/* <div
           className={
             currentuser.profilepic === 0 || !currentuser.profilepic
               ? "cover w-full h-[35vh]"
@@ -170,7 +170,40 @@ const PaymentPage = ({ username }) => {
                   ? "/Untitled_design-removebg-preview.png"
                   : currentuser.profilepic
               }
-              alt="image of user profile pic"
+              alt="invalid url"
+              width={330}
+              height={330}
+              className={
+                currentuser.profilepic === 0 || !currentuser.profilepic
+                  ? "mx-auto w-[330px]"
+                  : "mx-auto w-[330px] object-cover size-full"
+              }
+            />
+          </div>
+        </div> */}
+        <div
+          className={
+            currentuser.profilepic === 0 || !currentuser.profilepic
+              ? "cover w-full h-[35vh]"
+              : "cover w-full h-[30vh] pt-10 flex justify-center"
+          }
+        >
+          <div
+            className={
+              currentuser.profilepic === 0 || !currentuser.profilepic
+                ? ""
+                : "absolute overflow-hidden border-2 rounded-full size-40"
+            }
+          >
+            <img
+              src={
+                currentuser.profilepic === 0 ||
+                !currentuser.profilepic ||
+                currentuser.username === "nagwanirishab"
+                  ? "/Untitled_design-removebg-preview.png"
+                  : "/user-circle-stroke-rounded.svg"
+              }
+              alt="invalid url"
               width={330}
               height={330}
               className={
