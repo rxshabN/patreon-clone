@@ -169,7 +169,7 @@ const PaymentPage = ({ username }) => {
             className={
               currentuser.profilepic === 0 || !currentuser.profilepic
                 ? ""
-                : "absolute overflow-hidden border-2 rounded-full size-40 z-0"
+                : "absolute overflow-hidden rounded-full size-40 z-0"
             }
           >
             <img
