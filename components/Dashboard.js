@@ -156,7 +156,24 @@ const Dashboard = () => {
                   onChange={handleChange}
                   id="username"
                   placeholder="Enter your username"
-                  className="block w-full p-2 text-gray-400 border border-gray-300 rounded-lg text-xs bg-gray-200 focus:ring-gray-300 focus:border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-500 dark:text-gray-500 dark:focus:ring-gray-600 dark:focus:border-gray-600"
+                  className="block w-full p-2 text-gray-400 border border-gray-300 rounded-lg text-xs bg-gray-200 pointer-events-none focus:ring-gray-300 focus:border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-500 dark:text-gray-500 dark:focus:ring-gray-600 dark:focus:border-gray-600"
+                />
+              </div>
+              <div className="my-2">
+                <label
+                  htmlFor="displayname"
+                  className="flex flex-row gap-1 mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >
+                  Display name
+                </label>
+                <input
+                  type="text"
+                  name="displayname"
+                  value={form.displayname ? form.displayname : ""}
+                  onChange={handleChange}
+                  id="displayname"
+                  placeholder="Enter the name to be displayed"
+                  className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 />
               </div>
               <div className="my-2">

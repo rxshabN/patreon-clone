@@ -158,41 +158,24 @@ const PaymentPage = ({ username }) => {
           transition={Flip}
         />
         <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
-        <div
-          className={
-            currentuser.profilepic === 0 || !currentuser.profilepic
-              ? "cover w-full h-[35vh]"
-              : "cover w-full h-[30vh] pt-10 flex justify-center z-0"
-          }
-        >
-          <div
-            className={
-              currentuser.profilepic === 0 || !currentuser.profilepic
-                ? ""
-                : "absolute overflow-hidden rounded-full size-40 z-0"
-            }
-          >
+        <div className="cover w-full h-[30vh] pt-10 flex justify-center z-0">
+          <div className="absolute overflow-hidden rounded-full size-40 z-0">
             <img
               src={
-                !currentuser.profilepic ||
-                currentuser.username === "nagwanirishab"
-                  ? "/Untitled_design-removebg-preview.png"
+                currentuser.profilepic
+                  ? currentuser.profilepic
                   : "/user-stroke-rounded.svg"
               }
               alt="invalid url"
               width={330}
               height={330}
-              className={
-                currentuser.profilepic === 0 || !currentuser.profilepic
-                  ? "mx-auto w-[330px] z-0"
-                  : "mx-auto w-[330px] object-cover size-full z-0"
-              }
+              className="mx-auto w-[330px] object-cover size-full z-0"
             />
           </div>
         </div>
         <div className="info flex flex-col gap-2 justify-center items-center text-slate-300">
           <h2 className="font-bold text-lg text-center welcome">
-            Welcome, {username}
+            Welcome, <span id="display">{currentuser.displayname}</span>
           </h2>
           <div id="descriptionline1">{currentuser.description1}</div>
           <div id="descriptionline2">{currentuser.description2}</div>
