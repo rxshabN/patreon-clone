@@ -1,11 +1,20 @@
 "use client";
-import React from "react";
+import { React, useEffect } from "react";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
 import Loading from "../loading/page";
+import { useRouter } from "next/navigation";
 
 const PaymentSuccess = () => {
-  const { data: session, status } = useSession(); // Changed to 'session' for clarity
+  const { data: session, status } = useSession();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (status === "unauthenticated") {
+      router.push("/"); // Redirect to the homepage
+    }
+  }, [status, router]);
+
   if (status === "loading") {
     return <Loading />;
   } else {
