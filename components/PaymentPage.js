@@ -174,7 +174,6 @@ const PaymentPage = ({ username }) => {
           >
             <img
               src={
-                currentuser.profilepic === 0 ||
                 !currentuser.profilepic ||
                 currentuser.username === "nagwanirishab"
                   ? "/Untitled_design-removebg-preview.png"

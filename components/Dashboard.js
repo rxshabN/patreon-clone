@@ -156,7 +156,7 @@ const Dashboard = () => {
                   onChange={handleChange}
                   id="username"
                   placeholder="Enter your username"
-                  className="block w-full p-2 text-gray-400 border border-gray-300 rounded-lg text-xs bg-gray-200 pointer-events-none focus:ring-gray-300 focus:border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-500 dark:text-gray-500 dark:focus:ring-gray-600 dark:focus:border-gray-600"
+                  className="block w-full p-2 text-gray-400 border border-gray-300 rounded-lg text-xs bg-gray-200 focus:ring-gray-300 focus:border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-500 dark:text-gray-500 dark:focus:ring-gray-600 dark:focus:border-gray-600"
                 />
               </div>
               <div className="my-2">
