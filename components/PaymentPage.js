@@ -175,9 +175,11 @@ const PaymentPage = ({ username }) => {
         </div>
         <div className="info flex flex-col gap-2 justify-center items-center text-slate-300">
           <h2 className="font-bold text-lg text-center welcome">
-            Welcome<span id="display">{", " + currentuser.displayname}</span>
+            Welcome <span id="display">{currentuser.displayname}</span>
           </h2>
-          <div id="descriptionline1">{currentuser.description1}</div>
+          <div id="descriptionline1" className="h-auto w-[80svw]">
+            {currentuser.description1}
+          </div>
           <div id="descriptionline2">{currentuser.description2}</div>
           <div className="payment flex md:flex-row flex-col gap-3 w-[80%] mt-11 mb-8">
             <div className="supporters md:w-1/2 w-full bg-slate-900 text-white rounded-lg md:p-10 p-2 h-[60vh] overflow-y-auto">
