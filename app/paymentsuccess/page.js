@@ -1,5 +1,5 @@
 "use client";
-import { React, useEffect } from "react";
+import { React, useEffect, useState } from "react";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
 import Loading from "../loading/page";
@@ -10,9 +10,17 @@ import "react-toastify/dist/ReactToastify.css";
 const PaymentSuccess = () => {
   const { data: session, status } = useSession();
   const router = useRouter();
+  const [showToast, setShowToast] = useState(false);
 
   useEffect(() => {
     if (status === "unauthenticated") {
+      router.push("/");
+      setShowToast(true);
+    }
+  }, [status, router]);
+
+  useEffect(() => {
+    if (showToast) {
       toast.info("Please signup/login first", {
         position: "top-center",
         autoClose: 1800,
@@ -24,9 +32,8 @@ const PaymentSuccess = () => {
         theme: "colored",
         transition: Flip,
       });
-      router.push("/");
     }
-  }, [status, router]);
+  }, [showToast]);
 
   if (status === "loading") {
     return <Loading />;
