@@ -17,3 +17,5 @@ A Patreon-like platform built using **Next.js**, **Tailwind CSS**, and **MongoDB
 - **Database**: MongoDB Atlas
 - **Authentication**: NextAuth.js
 - **Payment Gateway**: Razorpay
+
+## Made by RishabN
