@@ -179,13 +179,13 @@ const PaymentPage = ({ username }) => {
           </h2>
           <div
             id="descriptionline1"
-            className="min-h-max w-2/3 overflow-y-auto flex-wrap text-center"
+            className="h-[30svh] w-2/3 overflow-auto flex-wrap text-center"
           >
             {currentuser.description1}
           </div>
           <div
             id="descriptionline2"
-            className="min-h-fit w-2/3 flex flex-wrap text-center"
+            className="h-auto w-2/3 overflow-auto flex-wrap text-center"
           >
             {currentuser.description2}
           </div>
