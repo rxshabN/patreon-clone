@@ -19,3 +19,7 @@ A Patreon-like platform built using **Next.js**, **Tailwind CSS**, and **MongoDB
 - **Payment Gateway**: Razorpay
 
 ## Made by RishabN
+
+## Deployed on Vercel
+
+- The link for the website is https://patreon-clone-ten.vercel.app/
