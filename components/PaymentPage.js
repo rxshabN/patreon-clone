@@ -179,13 +179,13 @@ const PaymentPage = ({ username }) => {
           </h2>
           <div
             id="descriptionline1"
-            className="h-auto w-full overflow-auto mt-2 text-center px-6"
+            className="h-auto w-2/3 overflow-auto mt-2 text-center"
           >
             {currentuser.description1}
           </div>
           <div
             id="descriptionline2"
-            className="h-auto w-full overflow-auto text-center px-6"
+            className="h-auto w-2/3 overflow-auto text-center"
           >
             {currentuser.description2}
           </div>
