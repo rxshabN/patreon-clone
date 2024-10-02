@@ -150,49 +150,18 @@ const PaymentPage = ({ username }) => {
           transition={Flip}
         />
         <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
-        {/* <div
-          className={
-            currentuser.profilepic === 0 || !currentuser.profilepic
-              ? "cover w-full h-[35vh]"
-              : "cover w-full h-[30vh] pt-10 flex justify-center"
-          }
-        >
-          <div
-            className={
-              currentuser.profilepic === 0 || !currentuser.profilepic
-                ? ""
-                : "absolute overflow-hidden border-2 rounded-full size-40"
-            }
-          >
-            <img
-              src={
-                currentuser.profilepic === 0 || !currentuser.profilepic
-                  ? "/Untitled_design-removebg-preview.png"
-                  : currentuser.profilepic
-              }
-              alt="invalid url"
-              width={330}
-              height={330}
-              className={
-                currentuser.profilepic === 0 || !currentuser.profilepic
-                  ? "mx-auto w-[330px]"
-                  : "mx-auto w-[330px] object-cover size-full"
-              }
-            />
-          </div>
-        </div> */}
         <div
           className={
             currentuser.profilepic === 0 || !currentuser.profilepic
               ? "cover w-full h-[35vh]"
-              : "cover w-full h-[30vh] pt-10 flex justify-center"
+              : "cover w-full h-[30vh] pt-10 flex justify-center z-0"
           }
         >
           <div
             className={
               currentuser.profilepic === 0 || !currentuser.profilepic
                 ? ""
-                : "absolute overflow-hidden border-2 rounded-full size-40"
+                : "absolute overflow-hidden border-2 rounded-full size-40 z-0"
             }
           >
             <img
@@ -208,8 +177,8 @@ const PaymentPage = ({ username }) => {
               height={330}
               className={
                 currentuser.profilepic === 0 || !currentuser.profilepic
-                  ? "mx-auto w-[330px]"
-                  : "mx-auto w-[330px] object-cover size-full"
+                  ? "mx-auto w-[330px] z-0"
+                  : "mx-auto w-[330px] object-cover size-full z-0"
               }
             />
           </div>

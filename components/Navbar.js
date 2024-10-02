@@ -171,7 +171,7 @@ const Navbar = () => {
 
       {/* Hamburger Menu Items */}
       {showhamburger && (
-        <div className="md:hidden absolute right-0 top-8 w-full bg-black text-white z-5000">
+        <div className="md:hidden absolute right-0 top-8 w-full bg-black text-white z-[10000]">
           <ul className="flex flex-col items-center gap-5 py-2">
             <Link href={"/"}>
               <li onClick={handleMenuItemClick}>Home</li>
