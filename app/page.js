@@ -37,6 +37,7 @@ export default function Home() {
               width={100}
               height={100} // Specify height for optimization
               className="dollar rounded-full p-2"
+              loading="eager"
             />
             <p className="text-center">Fund your favourite creators</p>
           </div>
@@ -47,6 +48,7 @@ export default function Home() {
               width={100}
               height={100} // Specify height for optimization
               className="dollar p-2"
+              loading="eager"
             />
             <p className="text-center">Increase your growth</p>
           </div>
@@ -57,6 +59,7 @@ export default function Home() {
               width={100}
               height={100} // Specify height for optimization
               className="dollar rounded-full p-2"
+              loading="eager"
             />
             <p className="text-center">Your fans want to help</p>
           </div>
