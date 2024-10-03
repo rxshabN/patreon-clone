@@ -40,16 +40,6 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
         />
         <link
-          rel="preconnect"
-          href="https://api.razorpay.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preconnect"
-          href="https://www.patreon.com"
-          crossOrigin="anonymous"
-        />
-        <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
@@ -65,6 +55,16 @@ export default function RootLayout({ children }) {
           href="https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrJJfecg.woff2"
           as="font"
           type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preconnect"
+          href="https://api.razorpay.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preconnect"
+          href="https://www.patreon.com"
           crossOrigin="anonymous"
         />
       </head>
