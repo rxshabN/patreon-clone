@@ -26,7 +26,52 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <link rel="icon" href="favicon.ico" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossOrigin="anonymous"
+      />
+      <link
+        rel="preload"
+        href="https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrJJnecmNE.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin="anonymous"
+      />
+      <link
+        rel="preload"
+        href="https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrJJfecg.woff2"
+        as="font"
+        type="font/woff2"
+        crossOrigin="anonymous"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        rel="preconnect"
+        href="https://checkout.razorpay.com"
+        crossOrigin="anonymous"
+      />
+      <link
+        rel="preconnect"
+        href="https://api.razorpay.com"
+        crossOrigin="anonymous"
+      />
+      <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+      <link rel="preconnect" href="https://rxshabn.github.io/Netflix_Clone/" />
+      <link rel="preconnect" href="https://rxshabn.github.io/To-do-list/" />
+      <link
+        rel="preconnect"
+        href="https://rxshabn.github.io/Password-Manager/"
+      />
+      <link
+        rel="preconnect"
+        href="https://www.patreon.com"
+        crossOrigin="anonymous"
+      />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-bl from-slate-900 via-purple-900 to-slate-900`}
       >
