@@ -27,7 +27,7 @@ const Login = () => {
     return <Loading />;
   } else {
     return (
-      <div className="text-white container mx-auto py-14">
+      <div className="text-white container mx-auto py-14 px-5">
         <h1 className="font-bold text-3xl text-center">
           Sign up or Login to your account
         </h1>
