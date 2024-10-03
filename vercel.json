@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/(.*\\.(svg|png|avif))$",
+      "source": "/:path*\\.(svg|png|avif)$",
       "headers": [
         {
           "key": "Cache-Control",
