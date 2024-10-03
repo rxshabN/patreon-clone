@@ -36,16 +36,6 @@ export default function RootLayout({ children }) {
         />
         <link
           rel="preconnect"
-          href="https://checkout.razorpay.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preconnect"
-          href="https://api.razorpay.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preconnect"
           href="https://www.patreon.com"
           crossOrigin="anonymous"
         />
