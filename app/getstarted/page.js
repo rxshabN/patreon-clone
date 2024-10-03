@@ -20,6 +20,7 @@ const GetStarted = () => {
             src="/Screenshot 2024-10-02 031211.png"
             className="border-2 border-gray-300 rounded-lg object-cover"
             loading="eager"
+            alt="instruction"
           />
         </div>
       </div>
@@ -35,6 +36,7 @@ const GetStarted = () => {
             src="/Screenshot 2024-10-02 031242.png"
             className="border-2 border-gray-300 rounded-lg object-cover"
             loading="eager"
+            alt="instruction"
           />
         </div>
       </div>
@@ -50,6 +52,7 @@ const GetStarted = () => {
             src="/Screenshot 2024-10-03 141539.png"
             className="border-2 border-gray-300 rounded-lg object-cover"
             loading="eager"
+            alt="instruction"
           />
         </div>
       </div>
@@ -63,6 +66,7 @@ const GetStarted = () => {
             src="/Screenshot 2024-10-03 141507.png"
             className="border-2 border-gray-300 rounded-lg object-cover"
             loading="eager"
+            alt="instruction"
           />
         </div>
       </div>
@@ -78,6 +82,7 @@ const GetStarted = () => {
             src="/Screenshot 2024-10-03 141639.png"
             className="border-2 border-gray-300 rounded-lg object-cover"
             loading="eager"
+            alt="instruction"
           />
         </div>
       </div>
@@ -93,6 +98,7 @@ const GetStarted = () => {
             src="/Screenshot 2024-10-03 141713.png"
             className="border-2 border-gray-300 rounded-lg object-cover"
             loading="eager"
+            alt="instruction"
           />
         </div>
       </div>
