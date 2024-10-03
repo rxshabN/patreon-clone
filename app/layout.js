@@ -36,6 +36,16 @@ export default function RootLayout({ children }) {
         />
         <link
           rel="preconnect"
+          href="https://checkout.razorpay.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preconnect"
+          href="https://api.razorpay.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preconnect"
           href="https://www.patreon.com"
           crossOrigin="anonymous"
         />
@@ -71,10 +81,6 @@ export default function RootLayout({ children }) {
         </SessionWrapper>
         <Analytics />
         <SpeedInsights />
-        <Script
-          src="https://checkout.razorpay.com/v1/checkout.js"
-          strategy="afterInteractive" // Use afterInteractive to load the script after the page is interactive
-        />
       </body>
     </html>
   );
