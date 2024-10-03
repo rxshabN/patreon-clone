@@ -16,7 +16,7 @@ export default function Home() {
           <Link href="/getstarted">
             <button
               type="button"
-              className="mt-5 text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-2xl md:text-3xl px-5 py-2.5 md:px-8 md:py-3.5 text-center me-2 mb-2"
+              className="mt-5 text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-xl md:text-3xl px-4 py-2.5 md:px-8 md:py-3.5 text-center me-2 mb-2"
             >
               Click here to get started
             </button>
