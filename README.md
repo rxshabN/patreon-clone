@@ -23,3 +23,5 @@ A Patreon-like platform built using **Next.js**, **Tailwind CSS**, and **MongoDB
 ## Deployed on Vercel
 
 - The link for the website is https://patreon-clone-ten.vercel.app/
+
+## Payments are in Test Mode, hence no real transactions will be made.
