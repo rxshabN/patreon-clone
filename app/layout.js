@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import SessionWrapper from "@/components/SessionWrapper";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-import Script from "next/script";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
