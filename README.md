@@ -1,6 +1,6 @@
 # Patreon Clone
 
-A Patreon-like platform built using **Next.js**, **Tailwind CSS**, and **MongoDB Atlas**. This project allows users to create accounts, sign in via OAuth using Google and GitHub, and make payments using Razorpay.
+A Patreon-like project built using **Next.js**, **Tailwind CSS**, and **MongoDB Atlas**. This project allows users to create accounts, sign in via OAuth using Google and GitHub, and make payments using Razorpay.
 
 ## Features
 
