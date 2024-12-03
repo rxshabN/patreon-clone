@@ -21,7 +21,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: "22" # Match your project's Node.js version
           cache: "npm"
 
       # Install dependencies
@@ -32,13 +32,19 @@ jobs:
       - name: Run tests
         run: npm test
 
-      # Wait for Vercel preview deployment
-      - name: Wait for Vercel Deployment
-        uses: samuelmeuli/wait-for-vercel-preview@v1
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          deployment-url: "https://patreon-clone-git-${{ github.head_ref }}-*-.rxshabns-projects.vercel.app"
-          timeout: 300 # Wait up to 5 minutes for deployment
+      # Ping the Vercel preview deployment
+      - name: Ping Vercel Deployment
+        run: |
+          DEPLOYMENT_URL="https://patreon-clone-git-${{ github.head_ref }}-rxshabns-projects.vercel.app"
+          echo "Pinging Vercel preview deployment at $DEPLOYMENT_URL"
+          HTTP_STATUS=$(curl -o /dev/null -s -w "%{http_code}" $DEPLOYMENT_URL)
+
+          if [ "$HTTP_STATUS" -eq 200 ]; then
+            echo "Vercel deployment is live!"
+          else
+            echo "Vercel deployment failed with status $HTTP_STATUS."
+            exit 1
+          fi
 
   auto-merge:
     needs: test-and-validate
