@@ -20,7 +20,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-toastify": "^10.0.6",
-    "tailwind-merge": "^2.5.4"
+    "tailwind-merge": "^2.5.5"
   },
   "devDependencies": {
     "eslint": "^9",
