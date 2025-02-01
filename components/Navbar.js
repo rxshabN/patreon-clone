@@ -81,7 +81,7 @@ const Navbar = () => {
                   setshowdropdown(false);
                 }, 100);
               }}
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-hidden focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               type="button"
             >
               Welcome {session.user.email}
@@ -147,7 +147,7 @@ const Navbar = () => {
         )}
         {!session && (
           <Link href={"/login"}>
-            <button className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-linear-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-hidden focus:ring-purple-200 dark:focus:ring-purple-800">
+            <button className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
               <span className="relative px-3 py-1.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                 Sign Up / Login
               </span>
@@ -160,7 +160,7 @@ const Navbar = () => {
               handleLogout();
               handleMenuItemClick();
             }}
-            className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-linear-to-br from-red-500 to-red-600 group-hover:from-red-500 group-hover:to-red-600 hover:text-white dark:text-white focus:ring-4 focus:outline-hidden focus:ring-red-200 dark:focus:ring-red-800"
+            className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-500 to-red-600 group-hover:from-red-500 group-hover:to-red-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-red-200 dark:focus:ring-red-800"
           >
             <span className="relative px-3 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
               Logout
@@ -171,7 +171,7 @@ const Navbar = () => {
 
       {/* Hamburger Menu Items */}
       {showhamburger && (
-        <div className="md:hidden absolute right-0 top-8 w-full bg-black text-white z-10000">
+        <div className="md:hidden absolute right-0 top-8 w-full bg-black text-white z-[10000]">
           <ul className="flex flex-col items-center gap-5 py-2">
             <Link href={"/"}>
               <li onClick={handleMenuItemClick}>Home</li>
