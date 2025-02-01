@@ -19,7 +19,7 @@ const MyProjects = () => {
   }, []);
 
   return (
-    <div className="px-10 min-h-screen bg-gradient-to-bl from-slate-900 via-purple-900 to-slate-900 text-white py-10">
+    <div className="px-10 min-h-screen bg-linear-to-bl from-slate-900 via-purple-900 to-slate-900 text-white py-10">
       <h1 className="text-5xl text-center mb-12 font-bold">My Projects</h1>
       <div className="container mx-auto">
         {/* Project 1: Netflix Clone */}

@@ -61,12 +61,12 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-bl from-slate-900 via-purple-900 to-slate-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-linear-to-bl from-slate-900 via-purple-900 to-slate-900`}
       >
         <SessionWrapper>
           <Navbar />
 
-          <div className="min-h-screen bg-gradient-to-bl from-slate-900 via-purple-900 to-slate-900 text-white">
+          <div className="min-h-screen bg-linear-to-bl from-slate-900 via-purple-900 to-slate-900 text-white">
             {children}
           </div>
           <Footer />

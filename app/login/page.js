@@ -34,7 +34,7 @@ const Login = () => {
         <div className="login-buttons">
           <div className="flex flex-col gap-2 min-h-screen p-10 items-center">
             <button
-              className="mybutton w-64 flex items-center text-white border border-gray-300 rounded-lg max-w-xs px-6 py-2 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+              className="mybutton w-64 flex items-center text-white border border-gray-300 rounded-lg max-w-xs px-6 py-2 text-sm font-medium focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
               onClick={() => {
                 signIn("google");
               }}
@@ -97,7 +97,7 @@ const Login = () => {
             </button>
 
             <button
-              className="mybutton w-64 flex items-center text-white border border-gray-300 rounded-lg max-w-xs px-6 py-2 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+              className="mybutton w-64 flex items-center text-white border border-gray-300 rounded-lg max-w-xs px-6 py-2 text-sm font-medium focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
               onClick={() => {
                 signIn("github");
               }}
