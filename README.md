@@ -28,4 +28,4 @@ A Patreon-like project built using **Next.js**, **Tailwind CSS**, and **MongoDB 
 
 ## Issues
 
-- To report a bug or suggest a new feature or any improvements to the site, <a href="https://github.com/rxshabN/patreon-clone/issues">click here<a/>
+- To report a bug or suggest a new feature or any improvements to the site <a href="https://github.com/rxshabN/patreon-clone/issues">click here<a/>
