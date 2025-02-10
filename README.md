@@ -13,7 +13,7 @@ A Patreon-like project built using **Next.js**, **Tailwind CSS**, and **MongoDB 
 ## Technologies Used
 
 - **Frontend**: Next.js, Tailwind CSS
-- **Backend**: Node.js with Next.js API routes
+- **Backend**: Node.js with NextJS API routes
 - **Database**: MongoDB Atlas
 - **Authentication**: NextAuth.js
 - **Payment Gateway**: Razorpay
