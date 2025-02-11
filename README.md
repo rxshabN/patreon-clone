@@ -4,7 +4,7 @@ A Patreon-like project built using **Next.js**, **Tailwind CSS**, and **MongoDB 
 
 ## Features
 
-- User Authentication using Google and GitHub OAuth
+- User Authentication using Google and GitHub OAuth.
 - Create, read, and manage user profiles
 - Payment integration with Razorpay for subscriptions
 - Responsive design with Tailwind CSS
