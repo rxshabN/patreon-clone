@@ -23,6 +23,7 @@
     "tailwind-merge": "^3.0.2"
   },
   "devDependencies": {
+    "@types/semver": "^7.5.8",
     "eslint": "^9",
     "eslint-config-next": "15.1.7",
     "postcss": "^8",
