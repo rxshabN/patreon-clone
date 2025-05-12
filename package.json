@@ -13,7 +13,7 @@
     "@vercel/speed-insights": "^1.2.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.10.5",
-    "mongoose": "^8.14.1",
+    "mongoose": "^8.14.2",
     "next": "15.3.2",
     "next-auth": "^4.24.11",
     "razorpay": "^2.9.6",
