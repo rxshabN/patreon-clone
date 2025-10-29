@@ -15,7 +15,7 @@
     "framer-motion": "^12.23.24",
     "mongoose": "^8.19.2",
     "next": "15.5.6",
-    "next-auth": "^4.24.11",
+    "next-auth": "^4.24.12",
     "razorpay": "^2.9.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
